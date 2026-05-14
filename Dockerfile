@@ -57,7 +57,8 @@ WORKDIR /workspace/FlashVSR-Pro/Block-Sparse-Attention
 RUN pip install packaging ninja
 ENV PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
 # Apply optimizations for better compatibility and performance
-RUN python setup.py install
+# RUN python setup.py install
+RUN python -v setup.py install
 
 # 11. Clean caches to reduce image size
 RUN apt-get clean && \
