@@ -1,6 +1,6 @@
 ---
 
-name: 'build images v3 - manual'
+name: 'build images v4 - manual'
 
 on:
   workflow_dispatch:
